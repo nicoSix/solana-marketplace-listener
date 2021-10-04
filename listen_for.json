@@ -1,0 +1,43 @@
+[
+    {
+        "collection": "Solarians",
+        "attribute": "Prospector",
+        "value": 20 
+    },
+    {
+        "collection": "Solarians",
+        "attribute": "Drone",
+        "value": 13
+    },
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Cherry",
+        "value": 20
+    },
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Gold",
+        "value": 20
+    },
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Nebula",
+        "value": 20
+    },
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Ramen",
+        "value": 20
+    },
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Diamonds",
+        "value": 20
+    }
+    ,
+    {
+        "collection": "Skeleton%20Crew%20SKULLS",
+        "attribute": "Zombie Brains",
+        "value": 20
+    }
+]
