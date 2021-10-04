@@ -1,43 +1,51 @@
 [
     {
         "collection": "Solarians",
-        "attribute": "Prospector",
+        "attribute_name": "Title",
+        "attribute_value": "Prospector",
         "value": 20 
     },
     {
         "collection": "Solarians",
-        "attribute": "Drone",
+        "attribute_name": "Title",
+        "attribute_value": "Drone",
         "value": 13
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Cherry",
+        "attribute_name": "Headgear",
+        "attribute_value": "Cherry",
         "value": 20
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Gold",
+        "attribute_name": "Skull",
+        "attribute_value": "Gold",
         "value": 20
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Nebula",
+        "attribute_name": "Skull",
+        "attribute_value": "Nebula",
         "value": 20
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Ramen",
+        "attribute_name": "Skull",
+        "attribute_value": "Ramen",
         "value": 20
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Diamonds",
+        "attribute_name": "Eyes",
+        "attribute_value": "Diamonds",
         "value": 20
     }
     ,
     {
         "collection": "Skeleton%20Crew%20SKULLS",
-        "attribute": "Zombie Brains",
+        "attribute_name": "Skull",
+        "attribute_value": "Zombie Brains",
         "value": 20
     }
 ]
