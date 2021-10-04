@@ -8,10 +8,9 @@ base_url = "https://us-central1-digitaleyes-prod.cloudfunctions.net/offers-retri
 
 def check_attribute(r, attr):
   for o in r['offers']:
-    for a in o['metadata']['attributes']:
-      if ((o['price'] < attr['value'])):
+    if ((o['price'] < attr['value']*1000000000)):
         print("-------------------------------------------")
-        print("Alert: %s at %.2f!" %(a['value'], (o['price'] / 1000000000)))
+        print("Alert: %s at %.2f!" %(attr['attribute_value'], (o['price'] / 1000000000)))
         print("https://digitaleyes.market/item/%s" %(o['mint']))
         print("-------------------------------------------")
 

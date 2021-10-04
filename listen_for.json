@@ -8,8 +8,14 @@
     {
         "collection": "Solarians",
         "attribute_name": "Title",
-        "attribute_value": "Drone",
-        "value": 13
+        "attribute_value": "Monitor",
+        "value": 20
+    },
+    {
+        "collection": "Solarians",
+        "attribute_name": "Title",
+        "attribute_value": "Guard",
+        "value": 17
     },
     {
         "collection": "Skeleton%20Crew%20SKULLS",
@@ -47,5 +53,11 @@
         "attribute_name": "Skull",
         "attribute_value": "Zombie Brains",
         "value": 20
+    },
+    {
+        "collection": "Solarians",
+        "attribute_name": "Title",
+        "attribute_value": "Drone",
+        "value": 12
     }
 ]
