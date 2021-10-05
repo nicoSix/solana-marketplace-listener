@@ -39,7 +39,10 @@ def get_token_url(site):
 
 def get_solanart(attr):
   r = requests.get(base_url_solanart + collection_mapping[attr['collection']]['solanart']).json()
-  filtered_offers = filter_solanart(r, attr)
+  if 'attribute_value' in attr:
+    filtered_offers = filter_solanart(r, attr)
+  else:
+    filtered_offers = r
   parsed_results = []
   for offer in filtered_offers:
     parsed_results.append({
@@ -50,7 +53,10 @@ def get_solanart(attr):
   return parsed_results
 
 def get_de(attr):
-  r = requests.get(base_url_de + collection_mapping[attr['collection']]['de'] + "&" + attr['attribute_name'] + "=" + attr['attribute_value']).json()
+  if 'attribute_value' in attr:
+    r = requests.get(base_url_de + collection_mapping[attr['collection']]['de'] + "&" + attr['attribute_name'] + "=" + attr['attribute_value']).json()
+  else:
+    r = requests.get(base_url_de + collection_mapping[attr['collection']]['de']).json()
   offers = r['offers']
   parsed_offers = []
   for offer in offers:
@@ -65,7 +71,10 @@ def check_attribute(r, attr):
   for offer in r:
     if ((offer['price'] < attr['value'])):
         print("-------------------------------------------")
-        print("Alert: %s at %.2f!" %(attr['attribute_value'], (offer['price'])))
+        if 'attribute_value' in attr:
+          print("Alert: %s from %s at %.2f!" %(attr['attribute_value'], attr['collection'], (offer['price'])))
+        else:
+          print("Alert: random item from %s at %.2f!" %(attr['collection'], (offer['price'])))
         print(get_token_url(offer['site']) + "%s" %(offer['mint']))
         print("-------------------------------------------")
 
@@ -80,7 +89,7 @@ while True:
       r_solanart = get_solanart(attr)
     else:
       r_solanart = []
-      
+
     r = r_de + r_solanart
     check_attribute(r, attr)
   print("Sleeping for %d seconds, GN!" %(sleep_time))

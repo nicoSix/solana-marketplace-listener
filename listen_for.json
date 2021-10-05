@@ -59,5 +59,9 @@
         "attribute_name": "Title",
         "attribute_value": "Drone",
         "value": 12
+    },
+    {
+        "collection": "Skeleton Crew Skulls",
+        "value": 8
     }
 ]
