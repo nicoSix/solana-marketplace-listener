@@ -1,6 +1,6 @@
 # Solana marketplace listener
 
-Listener for DigitalEyes and Solanart listings, alerts when target is under a defined price.
+Listener for Solana marketplaces (DigitalEyes and Solanart) listings, alerts when target is under a defined price.
 
 ## How to setup
 
